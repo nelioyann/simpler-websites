@@ -1,0 +1,32 @@
+@import "fonts";
+@import "colors";
+@import "variables";
+@import "functions";
+@import "utilities";
+@import "resets";
+// @import "navigation";
+
+aside{
+    display: none;
+}
+
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: $clr-light;
+    width: 0%;
+    height: 100%;
+}
+
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
