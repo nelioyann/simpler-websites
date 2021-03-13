@@ -30,3 +30,22 @@ aside{
     z-index: 10;
     pointer-events: none;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: darken($color-dark, 8);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $color-light;
+   
+    border-radius: 5px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: lighten($color-dark, 15);
+  }

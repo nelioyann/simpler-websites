@@ -25,6 +25,8 @@ function delay(n) {
 
 function pageTransition() {
   var tl = gsap.timeline();
+
+  
   tl.to(".loading-screen", {
     duration: 1.2,
     width: "100%",
@@ -50,6 +52,12 @@ function contentAnimation() {
     opacity: 0,
     stagger: 0.4,
     delay: 0.2,
+  });
+  tl.from("p, h3, figure", {
+    duration: 0.6,
+    opacity: 0,
+    stagger: 0.3,
+    delay: -1,
   });
 }
 
