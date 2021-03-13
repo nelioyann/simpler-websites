@@ -105,6 +105,14 @@ ul.reset {
   }
 }
 
+.border-b {
+  border-bottom: 1px solid #cccccc;
+}
+
+.border-t {
+  border-top: 1px solid #222;
+}
+
 .no-padding {
   padding: 0;
 }
@@ -170,7 +178,7 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, p {
+p {
   max-width: 60ch;
 }
 
@@ -195,12 +203,16 @@ a {
   color: inherit;
 }
 
-a:active {
-  opacity: 0.5;
+a:link {
+  color: #16498a;
 }
 
 a:hover {
   opacity: 0.5;
+}
+
+a:active {
+  color: #16498a;
 }
 
 figure {

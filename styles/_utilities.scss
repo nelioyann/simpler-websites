@@ -81,6 +81,16 @@ ul.reset{
 }
 
 
+.border{
+    &-b{
+        border-bottom: 1px solid $color-light;
+    }
+    &-t{
+        border-top: 1px solid $color-dark;
+
+    }
+}
+
 .no{
     &-padding{
         padding: 0;
@@ -123,3 +133,4 @@ a, button{
         color: $color-primary;
     }
 }
+

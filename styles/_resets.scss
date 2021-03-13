@@ -19,7 +19,7 @@ img{
     max-width: 100%;
 }
 
-h1, h2, h3, p{
+p{
     max-width: 60ch;
 }
 h2{
@@ -41,11 +41,14 @@ h2{
 a{
     text-decoration: none;
     color: inherit;
-    &:active{
-        opacity: 0.5;
+    &:link{
+        color: $color-primary;
     }
     &:hover{
         opacity: 0.5;
+    }
+    &:active{
+        color: $color-primary;
     }
 }
 
