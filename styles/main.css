@@ -141,6 +141,25 @@ ul.reset {
   padding: 0 clamp(1em, 10vw, 15em);
 }
 
+.responsive-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 43em) {
+  .responsive-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 a.primary, button.primary {
   background-color: var(--color-primary);
   color: var(--color-dark);
@@ -162,30 +181,31 @@ a.tertiary, button.tertiary {
 }
 
 html {
-  font-size: 100%;
+  scroll-behavior: smooth;
+  font-size: clamp(100%, calc(1rem + 1.5vw), 40px);
 }
 
 body {
-  line-height: 1.6;
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
-  max-width: 914px;
+  max-width: clamp(10em, 80vw, 100vw);
   margin: 0 auto;
   padding: 0;
 }
 
-img, video {
+img, video, picture {
   max-width: 100%;
 }
 
 p {
   max-width: 80ch;
+  line-height: 1.7;
 }
 
 h2 {
-  border-bottom-color: #cccccc;
+  border-bottom-color: #cccccc9a;
   border-bottom-style: solid;
-  border-bottom-width: 1px;
+  border-bottom-width: 0.2vw;
 }
 
 .theme-light {

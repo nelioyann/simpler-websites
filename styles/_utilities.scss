@@ -118,6 +118,14 @@ ul.reset{
     padding: 0 clamp(1em, 10vw , 15em);
 }
 
+.responsive-flex{
+    display: flex;
+    flex-direction: row;
+    @include mq-under($breakpoint-mobile) {
+        flex-direction: column;
+
+    }
+}
 
 a, button{
     &.primary{
